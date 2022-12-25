@@ -11,7 +11,6 @@ try:
     while True:
         if gpio.input(sw_pin) == gpio.HIGH:
             gpio.output(LED_pin, gpio.HIGH)
-            print('button pressed!')
         else:
             gpio.output(LED_pin, gpio.LOW)
 
